@@ -6,7 +6,7 @@
    <rect>
     <x>0</x>
     <y>0</y>
-    <width>1214</width>
+    <width>2425</width>
     <height>900</height>
    </rect>
   </property>
@@ -14,16 +14,26 @@
    <string>MainWindow</string>
   </property>
   <widget class="QWidget" name="central_widget">
-   <layout class="QHBoxLayout" name="horizontalLayout_5">
+   <layout class="QHBoxLayout" name="horizontalLayout_2">
     <item>
      <widget class="QSplitter" name="splitter">
       <property name="orientation">
        <enum>Qt::Horizontal</enum>
       </property>
+      <widget class="QWidget" name="verticalLayoutWidget_4">
+       <layout class="QVBoxLayout" name="tree_frame">
+        <item>
+         <widget class="QTreeView" name="treeView"/>
+        </item>
+       </layout>
+      </widget>
       <widget class="QWidget" name="verticalLayoutWidget_2">
        <layout class="QVBoxLayout" name="json_frame">
         <item>
          <layout class="QHBoxLayout" name="json_options2">
+          <item>
+           <layout class="QVBoxLayout" name="verticalLayout_2"/>
+          </item>
           <item>
            <widget class="QLabel" name="json_path">
             <property name="text">
@@ -115,6 +125,9 @@
            </property>
           </column>
          </widget>
+        </item>
+        <item>
+         <layout class="QHBoxLayout" name="horizontalLayout"/>
         </item>
        </layout>
       </widget>
@@ -256,7 +269,7 @@
     <rect>
      <x>0</x>
      <y>0</y>
-     <width>1214</width>
+     <width>2425</width>
      <height>26</height>
     </rect>
    </property>
