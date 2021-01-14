@@ -16,6 +16,18 @@
   <widget class="QWidget" name="centralwidget">
    <layout class="QHBoxLayout" name="horizontalLayout_5">
     <item>
+     <widget class="QTreeWidget" name="tree_widget">
+      <property name="tabKeyNavigation">
+       <bool>true</bool>
+      </property>
+      <column>
+       <property name="text">
+        <string notr="true">1</string>
+       </property>
+      </column>
+     </widget>
+    </item>
+    <item>
      <widget class="QSplitter" name="splitter">
       <property name="orientation">
        <enum>Qt::Horizontal</enum>
@@ -27,7 +39,7 @@
           <item>
            <widget class="QLabel" name="json_path">
             <property name="text">
-             <string>JSON path</string>
+             <string>Use File =&gt; Open... or Forward button to start</string>
             </property>
             <property name="indent">
              <number>6</number>
@@ -80,8 +92,14 @@
           <property name="columnCount">
            <number>3</number>
           </property>
+          <attribute name="horizontalHeaderCascadingSectionResizes">
+           <bool>false</bool>
+          </attribute>
           <attribute name="horizontalHeaderStretchLastSection">
            <bool>true</bool>
+          </attribute>
+          <attribute name="verticalHeaderVisible">
+           <bool>false</bool>
           </attribute>
           <row/>
           <row/>
@@ -95,7 +113,7 @@
           <row/>
           <column>
            <property name="text">
-            <string>Timestamp</string>
+            <string>Time</string>
            </property>
           </column>
           <column>
@@ -180,7 +198,7 @@
           <item>
            <widget class="QPushButton" name="back_btn">
             <property name="text">
-             <string>Step back</string>
+             <string>Back</string>
             </property>
            </widget>
           </item>
@@ -188,6 +206,9 @@
            <widget class="QPushButton" name="playback_btn">
             <property name="text">
              <string>Playback</string>
+            </property>
+            <property name="flat">
+             <bool>false</bool>
             </property>
            </widget>
           </item>
