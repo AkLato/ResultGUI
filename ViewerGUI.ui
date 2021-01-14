@@ -23,7 +23,7 @@
       <widget class="QWidget" name="verticalLayoutWidget_4">
        <layout class="QVBoxLayout" name="tree_frame">
         <item>
-         <widget class="QTreeView" name="treeView"/>
+         <widget class="QTreeView" name="tree_view"/>
         </item>
        </layout>
       </widget>
