@@ -30,58 +30,15 @@
       <widget class="QWidget" name="verticalLayoutWidget_2">
        <layout class="QVBoxLayout" name="json_frame">
         <item>
-         <layout class="QHBoxLayout" name="json_options2">
+         <layout class="QHBoxLayout" name="horizontalLayout">
           <item>
-           <layout class="QVBoxLayout" name="verticalLayout_2"/>
-          </item>
-          <item>
-           <widget class="QLabel" name="json_path">
-            <property name="minimumSize">
-             <size>
-              <width>1</width>
-              <height>0</height>
-             </size>
-            </property>
-            <property name="text">
-             <string>Use File =&gt; Open... or Forward button to start</string>
-            </property>
-            <property name="indent">
-             <number>6</number>
-            </property>
-           </widget>
-          </item>
-          <item>
-           <spacer name="JsonOptionsSpacer">
-            <property name="orientation">
-             <enum>Qt::Horizontal</enum>
-            </property>
-            <property name="sizeHint" stdset="0">
-             <size>
-              <width>40</width>
-              <height>20</height>
-             </size>
-            </property>
-           </spacer>
-          </item>
-          <item>
-           <widget class="QPushButton" name="copy_path">
+           <widget class="QScrollArea" name="scrollArea">
             <property name="sizePolicy">
-             <sizepolicy hsizetype="Minimum" vsizetype="Fixed">
+             <sizepolicy hsizetype="Preferred" vsizetype="Preferred">
               <horstretch>0</horstretch>
               <verstretch>0</verstretch>
              </sizepolicy>
             </property>
-            <property name="text">
-             <string>Copy</string>
-            </property>
-           </widget>
-          </item>
-         </layout>
-        </item>
-        <item>
-         <layout class="QHBoxLayout" name="horizontalLayout">
-          <item>
-           <widget class="QScrollArea" name="scrollArea">
             <property name="widgetResizable">
              <bool>true</bool>
             </property>
@@ -90,11 +47,57 @@
               <rect>
                <x>0</x>
                <y>0</y>
-               <width>645</width>
-               <height>877</height>
+               <width>183</width>
+               <height>913</height>
               </rect>
              </property>
              <layout class="QVBoxLayout" name="verticalLayout_7">
+              <item>
+               <layout class="QHBoxLayout" name="horizontalLayout_2">
+                <item>
+                 <widget class="QPushButton" name="copy_path">
+                  <property name="sizePolicy">
+                   <sizepolicy hsizetype="Minimum" vsizetype="Fixed">
+                    <horstretch>0</horstretch>
+                    <verstretch>0</verstretch>
+                   </sizepolicy>
+                  </property>
+                  <property name="text">
+                   <string>Copy</string>
+                  </property>
+                 </widget>
+                </item>
+                <item>
+                 <spacer name="JsonOptionsSpacer">
+                  <property name="orientation">
+                   <enum>Qt::Horizontal</enum>
+                  </property>
+                  <property name="sizeHint" stdset="0">
+                   <size>
+                    <width>40</width>
+                    <height>20</height>
+                   </size>
+                  </property>
+                 </spacer>
+                </item>
+                <item>
+                 <widget class="QLabel" name="json_path">
+                  <property name="minimumSize">
+                   <size>
+                    <width>1</width>
+                    <height>0</height>
+                   </size>
+                  </property>
+                  <property name="text">
+                   <string>Use File =&gt; Open... or Forward button to start</string>
+                  </property>
+                  <property name="indent">
+                   <number>6</number>
+                  </property>
+                 </widget>
+                </item>
+               </layout>
+              </item>
               <item>
                <widget class="QTabWidget" name="tab_widget_2">
                 <property name="tabShape">
