@@ -112,7 +112,7 @@
                      <rect>
                       <x>0</x>
                       <y>0</y>
-                      <width>616</width>
+                      <width>614</width>
                       <height>812</height>
                      </rect>
                     </property>
@@ -188,7 +188,7 @@
        </layout>
       </widget>
       <widget class="QWidget" name="verticalLayoutWidget">
-       <layout class="QVBoxLayout" name="player_frame" stretch="10,0,0">
+       <layout class="QVBoxLayout" name="player_frame" stretch="10,0,0,0">
         <item>
          <layout class="QHBoxLayout" name="image_player">
           <item>
@@ -231,6 +231,13 @@
          </layout>
         </item>
         <item>
+         <widget class="QSlider" name="horizontalslider">
+          <property name="orientation">
+           <enum>Qt::Horizontal</enum>
+          </property>
+         </widget>
+        </item>
+        <item>
          <widget class="Line" name="line">
           <property name="orientation">
            <enum>Qt::Horizontal</enum>
@@ -239,19 +246,6 @@
         </item>
         <item>
          <layout class="QHBoxLayout" name="horizontal_layout">
-          <item>
-           <spacer name="playback_options_spacer1">
-            <property name="orientation">
-             <enum>Qt::Horizontal</enum>
-            </property>
-            <property name="sizeHint" stdset="0">
-             <size>
-              <width>40</width>
-              <height>20</height>
-             </size>
-            </property>
-           </spacer>
-          </item>
           <item>
            <widget class="QPushButton" name="back_btn">
             <property name="text">
