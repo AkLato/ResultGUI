@@ -84,93 +84,107 @@
               </layout>
              </item>
              <item>
-              <widget class="QTabWidget" name="tab_widget">
-               <property name="sizePolicy">
-                <sizepolicy hsizetype="Expanding" vsizetype="Expanding">
-                 <horstretch>0</horstretch>
-                 <verstretch>0</verstretch>
-                </sizepolicy>
-               </property>
-               <property name="tabShape">
-                <enum>QTabWidget::Rounded</enum>
-               </property>
+              <widget class="QTabWidget" name="function_widget">
                <property name="currentIndex">
                 <number>0</number>
                </property>
-               <widget class="QWidget" name="tab_5">
+               <widget class="QWidget" name="tab">
                 <attribute name="title">
-                 <string>Attempts</string>
+                 <string>Functions</string>
                 </attribute>
-                <layout class="QVBoxLayout" name="verticalLayout_8">
+                <layout class="QVBoxLayout" name="verticalLayout_4">
                  <item>
-                  <widget class="QScrollArea" name="scrollArea">
-                   <property name="widgetResizable">
-                    <bool>true</bool>
+                  <widget class="QTabWidget" name="attempt_widget">
+                   <property name="sizePolicy">
+                    <sizepolicy hsizetype="Expanding" vsizetype="Expanding">
+                     <horstretch>0</horstretch>
+                     <verstretch>0</verstretch>
+                    </sizepolicy>
                    </property>
-                   <widget class="QWidget" name="scrollAreaWidgetContents">
-                    <property name="geometry">
-                     <rect>
-                      <x>0</x>
-                      <y>0</y>
-                      <width>614</width>
-                      <height>812</height>
-                     </rect>
-                    </property>
-                    <layout class="QVBoxLayout" name="verticalLayout_3">
+                   <property name="tabShape">
+                    <enum>QTabWidget::Rounded</enum>
+                   </property>
+                   <property name="currentIndex">
+                    <number>0</number>
+                   </property>
+                   <widget class="QWidget" name="tab_5">
+                    <attribute name="title">
+                     <string>Attempts</string>
+                    </attribute>
+                    <layout class="QVBoxLayout" name="verticalLayout_8">
                      <item>
-                      <widget class="QPushButton" name="btn_step_4">
-                       <property name="text">
-                        <string>Step 1</string>
-                       </property>
-                      </widget>
-                     </item>
-                     <item>
-                      <widget class="QTableWidget" name="step_table_4">
-                       <property name="sizePolicy">
-                        <sizepolicy hsizetype="Preferred" vsizetype="Expanding">
-                         <horstretch>0</horstretch>
-                         <verstretch>0</verstretch>
-                        </sizepolicy>
-                       </property>
-                       <property name="minimumSize">
-                        <size>
-                         <width>0</width>
-                         <height>500</height>
-                        </size>
-                       </property>
-                       <property name="rowCount">
-                        <number>0</number>
-                       </property>
-                       <attribute name="horizontalHeaderStretchLastSection">
+                      <widget class="QScrollArea" name="scrollArea">
+                       <property name="widgetResizable">
                         <bool>true</bool>
-                       </attribute>
-                       <attribute name="verticalHeaderStretchLastSection">
-                        <bool>false</bool>
-                       </attribute>
-                       <column>
-                        <property name="text">
-                         <string>Time</string>
+                       </property>
+                       <widget class="QWidget" name="scrollAreaWidgetContents">
+                        <property name="geometry">
+                         <rect>
+                          <x>0</x>
+                          <y>0</y>
+                          <width>590</width>
+                          <height>765</height>
+                         </rect>
                         </property>
-                       </column>
-                       <column>
-                        <property name="text">
-                         <string>Action</string>
-                        </property>
-                       </column>
+                        <layout class="QVBoxLayout" name="verticalLayout_3">
+                         <item>
+                          <widget class="QPushButton" name="btn_step_4">
+                           <property name="text">
+                            <string>Step 1</string>
+                           </property>
+                          </widget>
+                         </item>
+                         <item>
+                          <widget class="QTableWidget" name="step_table_4">
+                           <property name="sizePolicy">
+                            <sizepolicy hsizetype="Preferred" vsizetype="Expanding">
+                             <horstretch>0</horstretch>
+                             <verstretch>0</verstretch>
+                            </sizepolicy>
+                           </property>
+                           <property name="minimumSize">
+                            <size>
+                             <width>0</width>
+                             <height>500</height>
+                            </size>
+                           </property>
+                           <property name="rowCount">
+                            <number>0</number>
+                           </property>
+                           <attribute name="horizontalHeaderStretchLastSection">
+                            <bool>true</bool>
+                           </attribute>
+                           <attribute name="verticalHeaderStretchLastSection">
+                            <bool>false</bool>
+                           </attribute>
+                           <column>
+                            <property name="text">
+                             <string>Time</string>
+                            </property>
+                           </column>
+                           <column>
+                            <property name="text">
+                             <string>Action</string>
+                            </property>
+                           </column>
+                          </widget>
+                         </item>
+                         <item>
+                          <spacer name="verticalSpacer">
+                           <property name="orientation">
+                            <enum>Qt::Vertical</enum>
+                           </property>
+                           <property name="sizeHint" stdset="0">
+                            <size>
+                             <width>20</width>
+                             <height>40</height>
+                            </size>
+                           </property>
+                          </spacer>
+                         </item>
+                        </layout>
+                       </widget>
                       </widget>
-                     </item>
-                     <item>
-                      <spacer name="verticalSpacer">
-                       <property name="orientation">
-                        <enum>Qt::Vertical</enum>
-                       </property>
-                       <property name="sizeHint" stdset="0">
-                        <size>
-                         <width>20</width>
-                         <height>40</height>
-                        </size>
-                       </property>
-                      </spacer>
                      </item>
                     </layout>
                    </widget>
@@ -231,7 +245,7 @@
          </layout>
         </item>
         <item>
-         <widget class="QSlider" name="horizontalslider">
+         <widget class="QSlider" name="player_slider">
           <property name="orientation">
            <enum>Qt::Horizontal</enum>
           </property>
@@ -246,6 +260,19 @@
         </item>
         <item>
          <layout class="QHBoxLayout" name="horizontal_layout">
+          <item>
+           <spacer name="horizontalSpacer">
+            <property name="orientation">
+             <enum>Qt::Horizontal</enum>
+            </property>
+            <property name="sizeHint" stdset="0">
+             <size>
+              <width>40</width>
+              <height>20</height>
+             </size>
+            </property>
+           </spacer>
+          </item>
           <item>
            <widget class="QPushButton" name="back_btn">
             <property name="text">
@@ -282,29 +309,6 @@
              </size>
             </property>
            </spacer>
-          </item>
-          <item>
-           <widget class="QLabel" name="runtime_lbl">
-            <property name="text">
-             <string>Runtime</string>
-            </property>
-            <property name="margin">
-             <number>0</number>
-            </property>
-            <property name="indent">
-             <number>7</number>
-            </property>
-           </widget>
-          </item>
-          <item>
-           <widget class="QProgressBar" name="progress_bar">
-            <property name="value">
-             <number>24</number>
-            </property>
-            <property name="invertedAppearance">
-             <bool>false</bool>
-            </property>
-           </widget>
           </item>
          </layout>
         </item>
