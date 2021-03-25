@@ -40,22 +40,6 @@
              <item>
               <layout class="QHBoxLayout" name="horizontalLayout_3">
                <item>
-                <widget class="QLabel" name="json_path_2">
-                 <property name="minimumSize">
-                  <size>
-                   <width>1</width>
-                   <height>0</height>
-                  </size>
-                 </property>
-                 <property name="text">
-                  <string>Use File =&gt; Open... or Forward button to start</string>
-                 </property>
-                 <property name="indent">
-                  <number>6</number>
-                 </property>
-                </widget>
-               </item>
-               <item>
                 <spacer name="JsonOptionsSpacer_2">
                  <property name="orientation">
                   <enum>Qt::Horizontal</enum>
@@ -67,19 +51,6 @@
                   </size>
                  </property>
                 </spacer>
-               </item>
-               <item>
-                <widget class="QPushButton" name="copy_path_2">
-                 <property name="sizePolicy">
-                  <sizepolicy hsizetype="Minimum" vsizetype="Fixed">
-                   <horstretch>0</horstretch>
-                   <verstretch>0</verstretch>
-                  </sizepolicy>
-                 </property>
-                 <property name="text">
-                  <string>Copy</string>
-                 </property>
-                </widget>
                </item>
               </layout>
              </item>
@@ -123,7 +94,7 @@
                           <x>0</x>
                           <y>0</y>
                           <width>590</width>
-                          <height>765</height>
+                          <height>773</height>
                          </rect>
                         </property>
                         <layout class="QVBoxLayout" name="verticalLayout_3">
